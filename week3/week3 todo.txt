@@ -1,0 +1,9 @@
+
+build
+build step
+freestyle project
+item
+pipeline
+trigger
+schedule formats
+console output
