@@ -1,9 +1,15 @@
 pipeline {
     agent any
+
+    environment {
+        PATH = "C:\\Users\\khyat\\AppData\\Local\\Programs\\DockerDesktop\\resources\\bin;${env.PATH}"
+    }
+
     stages {
         stage('Build') {
             steps {
                 echo 'Build Docker Image'
+                bat 'docker --version'
                 bat 'docker build -t mypythonflaskapp .'
             }
         }
